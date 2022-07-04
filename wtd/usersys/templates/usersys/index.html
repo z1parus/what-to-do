@@ -1,0 +1,68 @@
+{% extends 'usersys/base.html' %}
+{% load static %}
+
+{% block content %}
+        <main class="welcome-page">
+
+
+            <div class="first-screen">
+                <img class="pencil animate__fadeInDown" src="{% static 'img/wp-todo.png' %}" alt="">
+                <h1 class="fs-title">
+                    Добро пожаловать в<br>
+                    <span>WhatToDo?</span>
+                </h1>
+                <div class="arrows-div">
+                    <img class="arrows-down" src="{% static 'img/arrows-down-white.png' %}" alt="" id="arrow1">
+                </div>
+
+                <div class="wave"></div>
+                <div class="wave2"></div>
+            </div>
+
+            <div class="second-screen">
+                <div class="second-screen-content">
+                    <img src="{% static 'img/second-screen-img.png' %}" alt="">
+
+                <div class="second-screen-info">
+                    <h1>Мы сделали ведение заметок - проще!</h1>
+                    <p>Платформа "WhatToDo?" позволяет вести заметки, задачи на день, списки дел и покупок с абсолютной
+                        простотой! Добавляйте, удаляйте, редактируйте, настраивайте, ведите учет выполненных-невыполненных задач!
+                        С нашей платформой вам больше не придется скачивать тяжелые и большие приложения или использовать
+                        ручку и листик - все, что нужно, здесь и ничего лишнего!
+                    </p>
+                </div>
+                </div>
+
+
+                <div class="color-arrows-div">
+                    <img class="color-arrows-down" src="{% static 'img/color-arrow.png' %}" alt="" id="arrow2">
+                </div>
+            </div>
+
+            <div class="third-screen">
+
+                <div class="wave-reversed"></div>
+                <div class="wave-reversed2"></div>
+
+                <div class="third-screen-info">
+
+                    <div class="third-screen-text">
+                        <h1>Открыто - навсегда!</h1>
+                        <p>
+                            Платформа "WhatToDo?" - это навесгда! Изначально, она задумывалась, как учебный проект,
+                            поэтому весь функционал будет бесплатным бесконечно!
+                        </p>
+                    </div>
+                    <img src="{% static 'img/third-screen-img.png' %}" alt="">
+                </div>
+                <div class="go-link">
+                        <a class="go-button-header" href="{% url 'signup' %}">Попробуйте!</a>
+                </div>
+                <div class="wave5"></div>
+                <div class="wave6"></div>
+
+            </div>
+
+
+        </main>
+{% endblock content %}

@@ -1,0 +1,251 @@
+{% extends 'cabinet/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <main class="cabinet-page">
+
+            <div class="main-space">
+                <h1 class="ms-title">Ваши заметки</h1>
+                <div class="hints">
+
+                     <!-- <div class="each-day">
+
+                        <div class="day-title">
+                            <p class="day-title-p" >21.06.2022</p>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                            <div class="checkboxes">
+                                <ul>
+                                    <li class="checkbox">Подзадача 1</li>
+                                    <li class="checkbox">Подзадача 2</li>
+                                    <li class="checkbox">Подзадача 3</li>
+                                    <li class="checkbox">Подзадача 4</li>
+                                    <li class="checkbox">Подзадача 5</li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                       <!-- <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="each-day">
+
+                        <div class="day-title">
+                            <p class="day-title-p" >22.06.2022</p>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="each-day">
+
+                        <div class="day-title">
+                            <p class="day-title-p" >23.06.2022</p>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>
+
+                        <div class="hint">
+                            <p class="hint-title">Заметка 1</p>
+                            <p class="date-complete">До: <span class="hint-date">26.07</span></p>
+                            <div class="hint-buttons">
+                                <img src="{% static 'img/archive-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/dump-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/star-blue.png' %}" alt="" class="btn-hint">
+                                <img src="{% static 'img/pencil-blue.png' %}" alt="" class="btn-hint">
+                            </div>
+                        </div>-->
+
+                    <!-- </div>  -->
+
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="buttons-cabinet">
+                    <h1 class="filter-title s-title">Действия</h1>
+                    <button class="new-hint-btn" type="button" id="newHintBtn">Новая заметка</button>
+                    <button class="new-hint-btn" id="settingsBtn">Натсройки аккаунта</button>
+
+                </div>
+                <div class="filters">
+                    <h1 class="filter-title">Фильтры</h1>
+                    <button class="new-hint-btn dateToFilter" type="button">По дате выполнения</button>
+                    <button class="new-hint-btn markedFilter">По важности</button>
+                    <button class="new-hint-btn outdatedFilter">Просроченные</button>
+                    <button class="new-hint-btn archiveFilter">Архив</button>
+                    <button class="new-hint-btn resetFilters">Сбросить фильтры</button>
+                </div>
+                <div class="other">
+                    <h1 class="filter-title">Другое</h1>
+                    <a href="{% url 'logout' %}" class="new-hint-btn logoutBtn">Выйти из аккаунта</a>
+                </div>
+
+                <div class="new-hint-block disabled-block">
+                    <div class="form-block">
+                        {% csrf_token %}
+                        <div class="new-hint-title">Введите название новой заметки</div>
+                        <input class="new-hint-title-input" type="text" placeholder="Название">
+                        <div class="new-hint-date-to">До какого дня должна быть выполнена?</div>
+                        <input class="new-hint-date-to-input" type="date">
+                        <div class="new-hint-checkbox">Подзадачи</div>
+                        <input class="new-hint-checkbox-input" type="text" placeholder="Задача #1" id="cb1">
+                        <input class="new-hint-checkbox-input" type="text" placeholder="Задача #2" id="cb2">
+                        <input class="new-hint-checkbox-input" type="text" placeholder="Задача #3" id="cb3">
+                        <input class="new-hint-checkbox-input" type="text" placeholder="Задача #4" id="cb4">
+                        <input class="new-hint-checkbox-input" type="text" placeholder="Задача #5" id="cb5">
+                        <button class="new-hint-button-go" type="button" id="createBtn" >Добавить!</button>
+                    </div>
+                </div>
+                <div class="settings-block disabled-block">
+                    <div class="form-block">
+                        <h1 class="settings-title">Настройки аккаунта</h1>
+                    </div>
+                    <div class="change-email-title">Изменить адрес электронной почты</div>
+                    <input type="email" class="change-email-input" value="user@gmail.com" placeholder="Введите адрес электронной почты">
+                    <button class="change-email-btn change-btn" type="button">Изменить</button>
+                    <div class="change-password-title">Изменить пароль</div>
+                    <input type="password" class="change-password-input change-input" placeholder="Введите новый пароль"><br>
+                    <input type="password" class="change-password-input2 change-input" placeholder="Повторите новый пароль">
+                    <button class="change-password-btn change-btn">Изменить</button>
+                </div>
+                <div class="edit-hint-block disabled-block">
+                    <div class="form-edit-block">
+                        <div class="edit-hint-title">Название заметки</div>
+                        <input class="edit-hint-title-input" type="text" placeholder="Название">
+                        <div class="edit-hint-date-to">До какого дня должна быть выполнена?</div>
+                        <input class="edit-hint-date-to-input" type="date">
+                        <div class="edit-hint-checkbox">Подзадачи</div>
+                        <input class="edit-hint-checkbox-input" type="text" placeholder="Задача #1" id="editcb1">
+                        <input class="edit-hint-checkbox-input" type="text" placeholder="Задача #2" id="editcb2">
+                        <input class="edit-hint-checkbox-input" type="text" placeholder="Задача #3" id="editcb3">
+                        <input class="edit-hint-checkbox-input" type="text" placeholder="Задача #4" id="editcb4">
+                        <input class="edit-hint-checkbox-input" type="text" placeholder="Задача #5" id="editcb5">
+                        <button class="edit-hint-button-go" type="button" id="editHintBtn" >Изменить!</button>
+                    </div>
+                </div>
+            </aside>
+
+
+
+        </main>
+
+{% endblock content %}
+
+

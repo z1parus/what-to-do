@@ -1,0 +1,25 @@
+{% extends 'usersys/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="register-page">
+            <div class="register-form log-form">
+                <div class="reg-title">
+                    <h1>Авторизация</h1>
+                </div>
+                <div class="reg-form login-form">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.username }}<br>
+                        {{ form.password }}<br>
+                        <button type="submit" class="reg-button">Вперед!</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="wave7"></div>
+                <div class="wave8"></div>
+</main>
+
+{% endblock content %}

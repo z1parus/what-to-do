@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatToDo</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+</head>
+<body>
+    <div class="start-page">
+
+        <header class="header">
+
+            <div class="logo">
+                <div class="logo-img">
+                    <img class="logoImg" src="{% static 'img/logo-img-white.png' %}" alt="">
+                </div>
+                <div class="logo-title">
+                    <h1>WhatToDo?</h1>
+                </div>
+            </div>
+
+            <nav class="nav">
+
+
+
+            </nav>
+
+        </header>
+
+        {% block content %}
+        {% endblock content %}
+
+
+        <footer class="footer-cabinet">
+            <div class="copyright-cabinet">Developed&Designed by Yuri Kuznetsov</div>
+        </footer>
+        <div class="dark-block disabled-block"></div>
+    </div>
+    <script src="/static/js/jquery-3.6.0.js"></script>
+    <script src="/static/js/labinet.js"></script>
+</body>
+</html>
